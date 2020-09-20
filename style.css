@@ -1,0 +1,230 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.flex{
+    display: flex;
+}
+nav button{
+    background-color: transparent;
+    color: rgb(75, 187, 125);
+    border:2px solid rgb(75, 187, 125);
+    padding: 8px 20px;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+nav button:hover{
+    color: white;
+    background-color: rgb(75, 187, 125);
+}
+header{
+    height: 60vh;
+    background-image: url(bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header h5{
+    font-size: 50px;
+    color: white;
+}
+header p{
+    color: rgb(218, 212, 196);
+    font-weight: bold;
+    font-size: 20px;
+}
+header button{
+    background: transparent;
+}
+header button:hover{
+    color: white;
+    background-color: rgb(75, 187, 125);
+}
+.serve{
+    width: 100px;
+}
+.icon i{
+    font-size: 80px;
+    color: rgb(57, 177, 93);
+    margin: 10px auto;
+    padding: 19px;
+}
+.icon .col-sm-3:hover i{
+    color: white;
+    background-color:rgb(57, 177, 93);
+    border-radius: 50%;
+    transform: scale(0.8);
+}
+.icon .col-sm-3:hover{
+    transform: scale(1.25);
+}
+.icon p{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.team i{
+    font-size: 25px;
+    line-height: 20px;
+    margin: 0 10px;
+}
+.team img{
+    border-radius: 50%;
+    margin-top: -50px;
+    box-shadow: 0 0 10px 1px grey;
+}
+.team i:hover{
+    transform: scale(1.1)
+}
+.team .card:hover{
+    border-bottom: 3px solid rgb(57, 177, 93);
+}
+.team .card:hover img{
+    transform: scale(1.08);
+}
+.team .card:hover h5{
+    color:rgb(57, 177, 93);
+}
+.form{
+    height: 600px;
+    background-image: url(tree.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.form .div{
+    height: 500px;
+    width: 700px;
+    border-radius: 0 80px;
+    box-shadow: 0 0 20px 10px black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+
+.form .div:hover{
+    transform: scale(1.1);
+}
+.form .div:hover img{
+    transform: rotate(360deg);
+    transition: all 1.5s linear;
+}
+.form .div img:hover{
+    transform: scaleX(1.6);
+    transition: all 1s linear;
+}
+.form form{
+    margin-top: 150px;
+}
+.form form input{
+    margin-bottom: 50px;
+    width: 80%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    font-size: 20px;
+}::placeholder {
+    color: rgb(141, 127, 48);;
+  }
+.form form button{
+    background-color:transparent;
+    color:white;
+    border:2px solid white;
+    padding: 8px 20px;
+    border-radius: 5px;
+}
+.form form button:hover{
+    color: white;
+    background-color: rgb(75, 187, 125);
+}
+.youtube{
+    padding-top: 30px; 
+}
+
+footer{
+    background-color: rgb(109, 109, 107);
+}
+.section1{
+    margin-top: 30px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.con1 a{
+    text-decoration: none;
+    color: white;
+}
+.con1 a:hover{
+    color:rgb(75, 187, 125);
+    text-decoration: none;
+}
+
+.con2 p{
+    font-size: 14px;
+}
+.con3 img{
+    border: 5px double rgb(0, 0, 0);
+}
+
+.fa-facebook-square{
+    color: #3b5998;
+}
+
+.fa-twitter{
+    color:#00acee;
+}
+.fa-instagram{
+    color:#bc2a8d;
+}
+.fa-youtube{
+    color: #c4302b;
+}
+.fa-linkedin-in{
+    color: #3b5998;
+}
+.up a{
+    height: 60px;
+    width: 60px;
+    background-color: rgb(246, 246, 246);
+    margin: 1px 3px;
+    text-align: center;
+    line-height: 62px;
+    border-radius: 50%;
+    box-shadow: 1px 4px 2px 2px rgb(63, 71, 75);
+    position: relative; overflow: hidden;
+}
+
+.up i{
+    transition: all 0.3s linear;
+    font-size: 25px;
+}
+
+.up a:hover .fab{
+    transform: scale(1.5);
+    color: white;
+}
+
+.up a:before{
+    content: "";width: 120%;
+    height: 120%; position: absolute;
+    top: 90%; left: -50%;
+    background-color: rgb(53, 206, 122);
+    top: 90%; left: -50%;
+    transform: rotate(60deg);
+
+}
+
+.up a:hover:before{
+    animation: social 0.8s 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes social{
+    0%{top: 90%; left: -50%;}
+    50%{top: -60%;left: -10%;}
+    100%{top: -10%;left: -5%;}
+}
+
+
